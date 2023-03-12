@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:sans-serif;
+}
+
+body{
+    height:100vh;
+    background-image:url(images/232767.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(253, 253, 253);
+    font-size: 1rem;
+    
+}
+
+.navbar .links a:hover{
+    color: brown;
+}
+
+.navbar .links{
+    display: flex;
+    gap: 6rem;
+}
+
+header{
+    position: relative;
+    padding: 0 2 rem;
+}
+
+
+
+.navbar{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    height: 60px;
+}
+
+.navbar .logo a {
+    font-size: 2.0rem;
+    font-weight: bolder;
+    
+}
+
+.navbar .menu_button{
+    color: rgb(240, 239, 238);
+    padding-right: 2rem;
+    cursor: pointer;
+    display: none;
+}
+
+.drop_menu{
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    background-color: rgba(249, 241, 5, 0.1);
+    backdrop-filter: blur(17px);
+    width: 250px;
+    border-radius: 15px;
+    overflow: hidden;
+    
+
+}
+
+.drop_menu li{
+    display: flex;
+    justify-content: center;
+    padding:3rem ;
+}
+
+
+/*adding responsivness by media query*/
+
+@media(max-width:1228px){
+    .navbar .links{
+        display: none;
+    }
+
+    .navbar .menu_button{
+        display: block;
+    }
+
+    .drop_menu{
+        display: block;
+    }
+}
